@@ -1,4 +1,5 @@
 <header>
+    
     <nav class="navbar navbar-expand-lg navibar-light bg-light">
         <a class="navbar-brand " href="/">EJS</a>
         <ul class = "navbar-nav mr-auto">
@@ -10,4 +11,10 @@
             </li>
         </ul>
     </nav>
+    <br>
+    <!--
+        Quando nao passa o parametro pagina no index ele faz esta condicao e coloca Home em pagina
+    -->
+    <p>Pagina: <%= typeof pagina != "undefined" ? pagina: "Home" %></p>
+    <br>
 </header>

@@ -8,9 +8,18 @@
 
         <Main>
             <div class="jumbotron">
-                <h1>Node com EJS</h1>
+                <h1>Node com EJS</h1><br>
                 <p>Vamos aprender a trabalhar com arquivos EJS</p>
+                <p><%= subtitle %></p>
             </div>
+            <ul>
+                <!-- Nao tem o - na primeira porcetagem porque e codigo javascript -->
+                <% qualitys.forEach(function(quality){ %>
+                    <li>
+                        <strong><%= quality.title %></strong><%= quality.message %>
+                    </li>
+               <% }) %>  
+            </ul>
         </Main>
 
         <%- include("../partials/footer"); %>
