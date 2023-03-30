@@ -1,0 +1,25 @@
+
+
+body {
+    height: 70vh;
+    width: 70%;
+    border: 1px solid red;
+}
+
+.container {
+    display: flex;
+    gap: 1rem;    
+}
+
+main, div {
+    border: 1px solid;
+    height: 50vh;
+}
+
+main {
+    flex-basis: 25%;
+}
+
+div {
+    flex: 1;
+}
